@@ -1018,6 +1018,10 @@ select {
   margin-left: auto;
   margin-right: auto;
 }
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -1026,13 +1030,13 @@ select {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 .ml-3 {
   margin-left: 0.75rem;
@@ -1103,6 +1107,12 @@ select {
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mr-1 {
+  margin-right: 0.25rem;
+}
+.mt-auto {
+  margin-top: auto;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1115,12 +1125,6 @@ select {
 .mb-3 {
   margin-bottom: 0.75rem;
 }
-.mr-1 {
-  margin-right: 0.25rem;
-}
-.mt-auto {
-  margin-top: auto;
-}
 .block {
   display: block;
 }
@@ -1132,6 +1136,9 @@ select {
 }
 .inline-flex {
   display: inline-flex;
+}
+.table {
+  display: table;
 }
 .grid {
   display: grid;
@@ -1166,6 +1173,9 @@ select {
 .h-20 {
   height: 5rem;
 }
+.h-48 {
+  height: 12rem;
+}
 .h-full {
   height: 100%;
 }
@@ -1174,9 +1184,6 @@ select {
 }
 .h-64 {
   height: 16rem;
-}
-.h-48 {
-  height: 12rem;
 }
 .h-2 {
   height: 0.5rem;
@@ -1226,14 +1233,14 @@ select {
 .w-20 {
   width: 5rem;
 }
+.w-56 {
+  width: 14rem;
+}
 .w-9 {
   width: 2.25rem;
 }
 .w-96 {
   width: 24rem;
-}
-.w-56 {
-  width: 14rem;
 }
 .w-2 {
   width: 0.5rem;
@@ -1258,6 +1265,9 @@ select {
 }
 .shrink-0 {
   flex-shrink: 0;
+}
+.table-auto {
+  table-layout: auto;
 }
 .origin-top-left {
   transform-origin: top left;
@@ -1575,11 +1585,11 @@ select {
 .p-6 {
   padding: 1.5rem;
 }
-.p-3 {
-  padding: 0.75rem;
-}
 .p-4 {
   padding: 1rem;
+}
+.p-3 {
+  padding: 0.75rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -1809,6 +1819,10 @@ select {
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity));
 }
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
+}
 .text-orange-500 {
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
@@ -1828,10 +1842,6 @@ select {
 .text-trueGray-700 {
   --tw-text-opacity: 1;
   color: rgb(64 64 64 / var(--tw-text-opacity));
-}
-.text-yellow-400 {
-  --tw-text-opacity: 1;
-  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 .text-lime-600 {
   --tw-text-opacity: 1;
@@ -1994,6 +2004,10 @@ select {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.hover\:text-red-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 .hover\:text-orange-500:hover {
   --tw-text-opacity: 1;
