@@ -1,7 +1,7 @@
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-gray-700">
     <h1 class="text-3xl text-center font-semibold mb-8">Complete los datos para crear un producto</h1>
 
-    <div class="bg-white shadow-xl rounded-lg p-6">
+    <div class="bg-white shadow-xl rounded-lg p-6 mb-6">
         <div class="grid grid-cols-2 gap-6 mb-4">
             <div>
                 <x-jet-label value="Categorías" />
