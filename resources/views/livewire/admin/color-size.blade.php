@@ -1,5 +1,5 @@
-<div>
-    <div class="my-12 bg-white shadow-lg rounded-lg p-6 mb-6">
+<div class="mt-4">
+    <div class="bg-gray-100 shadow-lg rounded-lg p-6">
         <div class="mb-6">
             <x-jet-label>
                 Color
@@ -16,7 +16,6 @@
             </div>
             <x-jet-input-error for="color_id" />
         </div>
-
         <div>
             <x-jet-label>
                 Cantidad
@@ -24,7 +23,6 @@
             <x-jet-input type="number" wire:model.defer="quantity" placeholder="Ingrese una cantidad" class="w-full" />
             <x-jet-input-error for="quantity" />
         </div>
-
         <div class="flex justify-end items-center mt-4">
             <x-jet-action-message class="mr-3" on="saved">
                 Agregado
@@ -33,11 +31,10 @@
                 Agregar
             </x-jet-button>
         </div>
-
     </div>
 
-    @if($productColors->count())
-        <div class="bg-white shadow-lg rounded-lg p-6 mb-6">
+    @if($sizeColors->count())
+        <div class="mt-4">
             <table>
                 <thead>
                 <tr>
@@ -52,7 +49,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($productColors as $color)
+                @foreach($sizeColors as $color)
                     <tr wire:key="product_color-{{ $color->pivot->id }}">
                         <td class="capitalize px-4 py-2">
                             {{ __(ucfirst($colors->find($color->pivot->color_id)->name)) }}
@@ -127,7 +124,7 @@
                     confirmButtonText: 'Yes, delete it!'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        Livewire.emitTo('admin.color-product', pivot);
+                        Livewire.emitTo('admin.color-size', 'delete', pivot);
                         Swal.fire(
                             'Deleted!',
                             'Your file has been deleted.',
@@ -138,5 +135,4 @@
             })
         </script>
     @endpush
-
 </div>
